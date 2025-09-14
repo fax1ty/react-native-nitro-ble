@@ -1,0 +1,20 @@
+{
+  "name": "react-native-nitro-ble",
+  "private": true,
+  "scripts": {
+    "publish": "turbo run publish"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "turbo": "^2.5.6",
+    "typescript": "5.9.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "bun@1.2.20",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

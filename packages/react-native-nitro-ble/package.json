@@ -1,0 +1,64 @@
+{
+  "name": "react-native-nitro-ble",
+  "version": "0.0.1",
+  "description": "react-native-nitro-ble",
+  "main": "lib/index",
+  "module": "lib/index",
+  "types": "lib/index.d.ts",
+  "react-native": "src/index",
+  "source": "src/index",
+  "files": [
+    "src",
+    "react-native.config.js",
+    "lib",
+    "nitrogen",
+    "android/build.gradle",
+    "android/gradle.properties",
+    "android/fix-prefab.gradle",
+    "android/CMakeLists.txt",
+    "android/src",
+    "ios/**/*.h",
+    "ios/**/*.m",
+    "ios/**/*.mm",
+    "ios/**/*.cpp",
+    "ios/**/*.swift",
+    "app.plugin.js",
+    "nitro.json",
+    "*.podspec",
+    "README.md"
+  ],
+  "scripts": {
+    "specs": "tsc && nitrogen --logLevel=\"debug\"",
+    "prepublish": "bun specs",
+    "publish": "bun publish --access public"
+  },
+  "keywords": [
+    "react-native",
+    "nitro",
+    "ble",
+    "bluetooth"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fax1ty/react-native-nitro-ble.git"
+  },
+  "author": "Artemiy Davydov <hi@fax1ty.dev> (https://github.com/fax1ty)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fax1ty/react-native-nitro-ble/issues"
+  },
+  "homepage": "https://github.com/fax1ty/react-native-nitro-ble#readme",
+  "devDependencies": {
+    "@types/react": "^19.0.6",
+    "nitrogen": "^0.29.4",
+    "react": "19.1.0",
+    "react-native": "0.81.1",
+    "react-native-nitro-modules": "^0.29.4",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-nitro-modules": "*"
+  }
+}
